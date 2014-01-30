@@ -171,7 +171,7 @@ int main(int argc, char const *argv[])
     //
     // Parse command line
 
-    if (argc < 3) {
+    if (argc < 4) {
         puts("Usage: anagram <dict> <max words> <string>");
         puts("  dict      - path to dictionary file. File should be ASCII and one word per line.");
         puts("  max words - limit the maximum number of words in the solution.");
