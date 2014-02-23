@@ -1,5 +1,6 @@
 #include <ctype.h>
 #include <list>
+#include <memory.h>
 #include <set>
 #include <stdio.h>
 #include <stdlib.h>
@@ -113,7 +114,7 @@ void AddSolution(char const *words[MAX_MAX_WORDS], int numWords)
     // Sort the specified solution
     list <char const *> sortedWords;
     for (int i = 0; i < numWords; i++) {
-        list <char const *>::const_iterator j = sortedWords.begin();
+        list <char const *>::iterator j = sortedWords.begin();
         while (j != sortedWords.end() && strcmp(*j, words[i]) < 0) {
             j++;     
         }
